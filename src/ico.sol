@@ -37,5 +37,26 @@ contract Cryptos is ERC20Interface{
 
         return true;
     }
+}
 
+contract CryptosICO is Cryptos{
+    address public admin;
+    address payable public deposit;
+    uint tokenPrice = 0.001 ether; // 1ETH = 1000 CRPT, 1CRPT = 0.001ETH
+    uint public hardCap = 300 ether;
+    uint public raisedAmount;
+    uint public saleStart = block.timestamp;
+    uint public saleEnd = block.timestamp + 604800; // ico ends in one week
+    uint public tokenTradeStart = saleEnd + 604800; // transferable in a week after saleEnd
+    uint public maxInvestment = 5 ether;
+    uint public minInvestment = 0.1 ether;
+
+    enum State{beforeStart, running, afterEnd, halted}
+    State public icoState;
+
+    constructor(address payable _deposit){
+        deposit = _deposit;
+        admin = msg.sender;
+        icoState = State.beforeStart;
+    }
 }
