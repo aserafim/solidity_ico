@@ -115,11 +115,11 @@
 	},
 	"sources": {
 		"src/ico.sol": {
-			"keccak256": "0x7a9c158b5c799cccd9e6c4e63a3f463c50dd624499ac2206b7a0c5673b6b457e",
+			"keccak256": "0xa807cf2110799b095912c26f1c0bcaf476175c5ccb84504416b810b9c560ac59",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://99126d4f06690f1b1519a990179ebb57b6d2e359325c9fe22023cfb5d859b310",
-				"dweb:/ipfs/QmYNo4c9Za39B3rqUxebxbC9Ddem1MZixwzJguYm95g1z7"
+				"bzz-raw://12d06421cdee9c72a7545b4d16439774f557b70d2fadaa034ef051c5e4023c36",
+				"dweb:/ipfs/QmdmaXph7h9HshH8dzfsqo1YdFzRLM31qxewB4wAnjmKUg"
 			]
 		}
 	},
